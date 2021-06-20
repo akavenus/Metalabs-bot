@@ -43,23 +43,6 @@ if login_required == 'no':
         'Sec-Fetch-Site': 'same-orgin',
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36',
     }
-    options_headers = {
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'access-control-request-headers': 'content-type,meta-labs-account,x-amz-cf-id,x-amz-req-id',
-        'access-control-request-method': 'POST',
-        'Cache-Control': 'no-cache',
-        'Orgin': 'https://' + domain,
-        'Pragma': 'no-cache',
-        'Referer': 'https://' + domain = '/',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'cross-site',
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36',
-    }
-    resp = requests.options('https://portal-api.metalabs.io/v1/checkouts', headers=options_headers)
-    print(resp.status_code)
     headers3 = {
         'Accept': 'application/json, text/plain, */*',
         'Accept-Encoding': 'gzip, deflate, br',
